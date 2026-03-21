@@ -18,7 +18,7 @@ class Config((object)):
 
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
-    TG_MAX_FILE_SIZE = 7892805795
+    TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 50000000
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
@@ -34,7 +34,7 @@ class Config((object)):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "7892805795"))
     # database session name, example: xurluploader
     SESSION_NAME = os.environ.get("SESSION_NAME", "videouploader")
     # database uri (mongodb)
@@ -51,7 +51,7 @@ class Config((object)):
 
     ERROR_TEXT = """ 
     Log: {}
-    Save the Log file and Send it to @Nexa_bots for Help :)
+    Save the Log file and Send it to @File_store_anuj_bot for Help :)
     """
 
     
